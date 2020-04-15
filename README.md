@@ -3,7 +3,7 @@
 <tr>
 <td>
   
-#### This is a webpage that enhances customer service by offering pizza deliveries, Current version 2020
+#### This is a webpage, that enhances customer service by offering pizza deliveries, Current version 2020
 </table>
 </tr>
 </td>
