@@ -7,13 +7,13 @@ function getPizza(size, crust, topping, number, total) {
 	this.number = number;
 	this.total = total;
 }
-// proceed button
+
 $(document).ready(function () {
-  //$("button.proceed").click(function(){
-  //$("button.proceed").hide();
-  //$("#information").hide();
-  //$("div.choice").slideDown(1000);
-	//});
+  $("button.proceed").click(function(){
+  $("button.proceed").hide();
+  $("#information").hide();
+	$("div.choice").slideDown(1000);
+	});
 	$("button.proceed").click(function(event){
     let psize = $("#size option:selected").val();
 		let pcrust = $("#crust option:selected").val();
@@ -94,7 +94,8 @@ $(document).ready(function () {
 		$("button#checkout").click(function (event) {event.preventDefault();
       $("button#checkout").hide();
       $("button.deliver").slideDown(1000);
-      $("#addedprice").slideDown(1000);
+			$("#addedprice").slideDown(1000);
+			$("#addedprice1").hide();
       $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
 		});
 		
