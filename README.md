@@ -21,7 +21,7 @@ https://Kingsleymuturi.github.io/yummy-scrummy-pizza
 * This is where our esteemed cutomers place their orders:
 ![Order placing section](images/order.png)
 ## Known Bugs
-Some texts might duplicate themselves due to button errors
+Some texts might duplicate themselves due to button errors.
 ### Development
 Want to contribute? Great!
 
