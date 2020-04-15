@@ -1,4 +1,4 @@
-# Yummy Scrummy Pizza
+# Yummy Scrummy Pizza.
 <table>
 <tr>
 <td>
