@@ -70,7 +70,7 @@ $(document).ready(function () {
 		$("button.proceed").show();
 		$("#information").show();
 		$("div.choice").hide();
-		document.getElementById("Invalid2").innerText = "Please select quantity among 1-50!"
+		document.getElementById("Invalid2").innerText = "Please select quantity among 1-100!"
     document.getElementById("Invalid2").style.color ="yellow"
 	}
 	 else {
