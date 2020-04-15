@@ -52,7 +52,7 @@ $(document).ready(function () {
 		$("#information").show();
 		$("div.choice").hide();
 		document.getElementById("Invalid").innerText = "Please select size!"
-    document.getElementById("Invalid").style.color ="yellow"
+    document.getElementById("Invalid").style.color ="blue"
 	} else if(pcrust == "0"){
 		$("button.proceed").show();
 		$("#information").show();
