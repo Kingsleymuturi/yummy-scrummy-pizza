@@ -40,5 +40,5 @@ During the creation of this webpage I used HTML, CSS and also JavaScript came in
 ## Support and contact details
 In case of anything find me here: kingsleymuturi9@gmail.com feel free to communicate any issue with the webpage
 
-### [LICENSE](https://github.com/Kingsleymuturi/yummy-srummy-pizza/blob/master/LICENSE)
+### [LICENSE](https://github.com/Kingsleymuturi/yummy-scrummy-pizza/blob/master/LICENSE)
 Copyright (c) 2020 [Kingsley Muturi ](https://github.com/Kingsleymuturi)
