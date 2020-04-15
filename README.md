@@ -13,7 +13,7 @@
 ## Description
 Yummy Scrummy Website, is a website that helps users get pizza at their doorsteps by offering quick deliveries countrywide and also has a section for users to give feedback on our service.
 ## Access
-* click the live link to be directed directly to the webpage
+* click the live link to be directed directly to the webpage:
 https://Kingsleymuturi.github.io/yummy-scrummy-pizza
 ![yummy scrummy pizza website](images/yummy.png)
 * This section allows users to give us their feedback
