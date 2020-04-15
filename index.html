@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy scrummy pizza😋</title>
+  <link rel="icon" type="image/png" href="pizza.jpeg">
+  <script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/wickedcss.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.css" rel ="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Yummy Scrummy Pizza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="navbar-brand" href="#variety">Our Varieties</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="#contact">Contact Us</a>
+        </li>  
+        <li class="nav-item">
+          <a class="navbar-brand" href="#about">About Us</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  <div class="header">
+  <h1><br><br><br><br><b><span class="head">Welcome to Yummy Scrummy<br> pizza😋</span><br><a class="btn btn-warning button floater" href="#order">  Order Now!</a></b><br><br><br>
+  <a href="#variety"><img id="mouseclick" src="images/mouse_click.png"></a><br><br><br></h1>
+  </div>
+  </header>
+  <p class="detail">Well if you are here you are definitely looking for some tasty pizza for dinner or lunch. Here we offer all kinds of pizza that are very well prepared such that you will just have a feeling of greatness when you taste our pizza. We also offer deliveries and we are open 24hrs a day.<span id="variety"></span></p>
+  <div class="variety" id="varieties"> 
+    <h2>OUR VARIETIES</h2>
+  </div>
+  <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="images/carlifonia.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><b>Carlifonia Pizza</b></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="images/Detroit.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><b>Detroit Pizza</b></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="images/Neopolitan.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><b>Neopolitan Pizza</b></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <img class="card-img-top" src="images/Chicago.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><b>Chicago Pizza</b></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <img class="card-img-top" src="images/St.louis.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><b>St. Louis Pizza</b></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <img class="card-img-top" src="images/Greek.png" alt="Card image cap" height="410px auto">
+        <div class="card-body">
+          <h5 class="card-title"><b>Greek Pizza</b></h5>
+          <span id="order"></span></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<div class="orders">
+<div class="orders-overlay">
+<h2 class="order"><br><b>ORDER HERE</b></h2>
+<h3>Try our tasty pizza by ordering here, having an option to be delivered for at your doorstep!</h3>
+  <form>
+    <label>Enter the details of the pizza you want below:</label><br>
+    <label>Size</label>
+    <select id="size" required>
+      <option value="0">---</option>
+      <option value="small">Small -- Ksh 600</option>
+      <option value="medium">Medium -- Ksh 850</option>
+      <option value="large">Large -- Ksh 1200</option>
+    </select><span id="Invalid"></span><br>
+    <label>Crust</label>
+    <select id="crust" required>
+      <option value="0">---</option>
+      <option value="Chicago Style Pan">Chicago Style Pan -- Ksh 300</option>
+      <option value="Flat Bread">Flat Bread -- Ksh 200</option>
+      <option value="Stuffed Dough">Stuffed Dough -- Ksh 150</option>
+      <option value="Beer Battered">Beer Battered -- Ksh 180</option>
+      <option value="Neopolitan">Neopolitan -- Ksh 150</option>
+      <option value="St. Louis">St. Louis -- Ksh 250</option>
+    </select><span id="Invalid1"></span><br>
+    <label for="Toppings">Select Your Toppings at Ksh. 100 each(for large), Ksh70 each(for medium), Ksh50 each(for small) </label><br>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="Pepperoni" value="Pepperoni"
+          name="toppings">
+        <label class="custom-control-label" for="Pepperoni">Pepperoni</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+        <label class="custom-control-label" for="Bacon">Bacon</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="Pineapple" value="Pineapple" name="toppings">
+        <label class="custom-control-label" for="Pineapple">Pineapple</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+        <label class="custom-control-label" for="Sausage">Sausage</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="Onions" value="Onions" name="toppings">
+        <label class="custom-control-label" for="Onions">Onions</label>
+      </div>
+      <br><span id="Invalid3"></span><br>
+      <label for="number"><b>How many Pizzas do you want?:</b></label>
+      <input type="number" id="number" placeholder="max=100" min="1" max="100"><span id="Invalid2"></span><br><br>
+      <button type="submit" class="btn btn-warning proceed">Proceed</button>
+      <span id="Invalid2"></span>
+      <hr class="new1">
+
+        <div id="information">
+          <p>Your order will be delivered to you as soon as possible.</p>
+          <p id="regards">Yummy Scrummy pizza😋</p>
+        </div>
+        <div class="choice">
+          <h2>Your Order is:</h2>
+          <div id="your-orders">
+            <table class="table table-sm  pizzatable">
+              <thead>
+                <tr>
+                  <th scope="col">Size</th>
+                  <th scope="col">Crust</th>
+                  <th scope="col">Toppings</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="ordersmade">
+                <tr>
+                  <td id="pizzasize"></td>
+                  <td id="pizzacrust"></td>
+                  <td id="pizzatopping"></td>
+                  <td id="pizzanumber"></td>
+                  <td id="totals"></td>
+                </tr>
+              </tbody>
+            </table>
+            <p id="pizzatotal"></p>
+            <p id="totalbill"></p>
+            <p id="addedprice">Delivery will cost sh. 300</p>
+            <p id="finallmessage"></p>
+          </div>
+          <button class="btn btn-warning" id="checkout">Checkout</button>
+          <button class="btn btn-warning deliver">Home delivery</button>
+        </div>
+        <div class="delivery">
+          <form action="">
+            <div class="form-group">
+              <span id="invalid"></span>
+              <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+              <input type="text" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+              <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+              <button class="btn btn-warning" id="final-order">Place Order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </form>
+</div>
+</div>
+<div id="about">
+  <div class="about-overlay">
+    <h2><br>ABOUT US</h2>
+    <p class="text">Yummy Scrummy Pizza was started in the year 2018, as a substitute to the tedious method of having to go to malls, supermarkets or restaurants to buy pizza. We simply made it easier for pizza lovers as they can now get a custom cooked pizza straight to their doorsteps. We are located in Thika near Thika Arcade building. Feel free to contact us when you reach Thika for any enquiries. We promise to make your pizza experience better as days go by as we open doors for anyone who has ideas on how to improve our customer service. As a customer we value you very much! All thanks for your support.</p>
+  </div>
+</div>
+<div id="contact">
+  <div class="contact-overlay">
+  <h5><b><br>CONTACT US</b></h5>
+  <form action="https://formspree.io/xlewzgaw" method="POST" name="feedback-form" class="validate" target="_blank" enctype=”multipart/form-data”>
+    <div class="form-row">
+      <div class="form-group col-md-2"></div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" name="NAME"  id="NAME" placeholder="Insert Name.." required>
+        </div>
+        <div class="form-group col-md-4">
+          <input type="email" class="form-control" name="EMAIL" id="EMAIL" placeholder="Insert Email.." required>
+        </div>
+        <div class="form-group col-md-2"></div>
+    </div><br>
+    <div class="form-group textarea">
+      <textarea type="text" class="form-control" name="MESSAGE" id="MESSAGE"  rows="6" placeholder="Type your message here.." required></textarea>
+    </div>
+    <input onclick="sendMsg()" type= "submit" value="Send Message" class="btn btn-outline-info" id="submit"></div>
+  </form>
+  </div>
+</div>
+<footer class="footer">
+  <div class="socialicons">
+    <a href="https://www.twitter.com" data-toggle="tooltip" title="Twitter" style="text-decoration: none;">
+    <img src="images/twitter.png" alt="twitter">
+    </a>
+    <a href="https://www.behance.net" data-toggle="tooltip" title="Behance" style="text-decoration: none;">
+    <img src="images/behance.png" alt="behance">
+    </a>
+    <a href="https://www.dribbble.com" data-toggle="tooltip" title="Dribbble" style="text-decoration: none;">
+    <img src="images/dribble.png" alt="dribble">
+    </a>
+    <a href="https://www.facebook.com" data-toggle="tooltip" title="Facebook" style="text-decoration: none;">
+    <img src="images/facebook.png" alt="facebook">
+    </a>
+    <a href="https://www.gmail.com" data-toggle="tooltip" title="G-mail" style="text-decoration: none;">
+    <img src="images/g_plus.png" alt="g_plus">
+    </a>
+    <a href="https://www.skype.com" data-toggle="tooltip" title="Skype" style="text-decoration: none;">
+    <img src="images/skype.png" alt="skype">
+    </a>
+    <a href="https://www.stumbleupon.com" data-toggle="tooltip" title="Stumbleupon" style="text-decoration: none;">
+    <img src="images/stumble_upon.png" alt="stumble">
+    </a>
+    <a href="https://www.pinterest.com" data-toggle="tooltip" title="Pinterest" style="text-decoration: none;">
+    <img src="images/pinterest.png" alt="pinterest">
+    </a>
+    <a href="https://www.youtube.com" data-toggle="tooltip" title="You Tube" style="text-decoration: none;">
+    <img src="images/you_tube.png" alt="you tube">
+    </a>
+    <a href="https://flickr.com" data-toggle="tooltip" title="Flickr" style="text-decoration: none;">
+    <img src="images/flickr.png" alt="flickr">
+    </a>
+  </div><br>
+  <p><b>Yummy Scrummy Pizza</b></p>
+  <p><b>2020</b></p>
+  </footer>
+</body>
+</html>
