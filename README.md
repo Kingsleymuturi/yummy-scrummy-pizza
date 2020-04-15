@@ -18,7 +18,7 @@ https://Kingsleymuturi.github.io/yummy-scrummy-pizza
 ![yummy scrummy pizza website](images/yummy.png)
 * This section allows users to give us their feedback:
 ![feedback section](images/feedback.png)
-* This is where our esteemed cutomers place their orders
+* This is where our esteemed cutomers place their orders:
 ![Order placing section](images/order.png)
 ## Known Bugs
 Some texts might duplicate themselves due to button errors
