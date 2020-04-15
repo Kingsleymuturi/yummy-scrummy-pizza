@@ -58,7 +58,7 @@ $(document).ready(function () {
 		$("#information").show();
 		$("div.choice").hide();
 		document.getElementById("Invalid1").innerText = "Please select crust!"
-    document.getElementById("Invalid1").style.color ="blue"
+    document.getElementById("Invalid1").style.color ="yellow"
 	}  else if(ptopping.length == 0){
 		$("button.proceed").show();
 		$("#information").show();
