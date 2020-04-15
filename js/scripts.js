@@ -106,7 +106,7 @@ $(document).ready(function () {
       $("button.deliver").hide();
       $("#pizzatotal").hide();
       let delamount = checkoutTotal + 300;
-      console.log("You will pay sh. " + delamount + " on delivery");
+      console.log("Prepare sh. " + delamount + " to pay on delivery");
       $("#totalbill").append("Your total bill plus delivery fee is: " + delamount);
 		});
 		
