@@ -9,10 +9,12 @@ function getPizza(size, crust, topping, number, total) {
 }
 
 $(document).ready(function () {
-  $("button.proceed").click(function(){
+  $("button.proceed").click(function(event){
   $("button.proceed").hide();
   $("#information").hide();
 	$("div.choice").slideDown(1000);
+
+	event.preventDefault();
 	});
 	$("button.proceed").click(function(event){
     let psize = $("#size option:selected").val();
