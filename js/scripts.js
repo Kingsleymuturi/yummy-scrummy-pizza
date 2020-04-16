@@ -77,6 +77,7 @@ $(document).ready(function () {
 		$("button.proceed").hide();
 		$("#information").hide();
 		$("div.choice").slideDown(1000);
+		$("button.deliver").hide();
 	}
 
 	total = pnumber*(price + crust_price + topping_value);
@@ -95,7 +96,6 @@ $(document).ready(function () {
       $("button#checkout").hide();
       $("button.deliver").slideDown(1000);
 			$("#addedprice").slideDown(1000);
-			$("#addedprice1").hide();
       $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
 		});
 		
