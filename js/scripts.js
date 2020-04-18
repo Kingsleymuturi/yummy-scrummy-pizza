@@ -67,19 +67,18 @@ $(document).ready(function () {
 		$("div.choice").hide();
 		document.getElementById("Invalid3").innerText = "Please select at least one topping!"
     document.getElementById("Invalid3").style.color ="yellow"
-	}
-	else if(pnumber <= 0 || pnumber > 100){
+	} else if(pnumber <= 0 || pnumber > 100){
 		$("button.proceed").show();
 		$("#information").show();
 		$("div.choice").hide();
 		document.getElementById("Invalid2").innerText = "Please select quantity among 1-100!"
     document.getElementById("Invalid2").style.color ="yellow"
-	}
-	 else {
+	} else {
 		$("button.proceed").hide();
 		$("#information").hide();
 		$("div.choice").slideDown(1000);
 		$("button.deliver").hide();
+		$("button#pick").hide();
 	}
 
 	total = pnumber*(price + crust_price + topping_value);
@@ -96,13 +95,15 @@ $(document).ready(function () {
 	
 		$("button#checkout").click(function (event) {event.preventDefault();
       $("button#checkout").hide();
-      $("button.deliver").slideDown(1000);
+			$("button.deliver").slideDown(1000);
+			$("button#pick").slideDown(1000);
 			$("#addedprice").slideDown(1000);
       $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
 		});
 		
 		$("button.deliver").click(function (event) {event.preventDefault();
-      $(".pizzatable").hide();
+			$(".pizzatable").hide();
+			$("button#pick").hide();
       $(".choice h2").hide();
       $(".delivery").slideDown(1000);
       $("#addedprice").hide();
@@ -112,6 +113,33 @@ $(document).ready(function () {
       console.log("Prepare sh. " + delamount + " to pay on delivery");
       $("#totalbill").append("Your total bill plus delivery fee is: " + delamount);
 		});
+
+		$("button#pick").click(function (event) {event.preventDefault();
+			$("button#pick").hide();
+			$("button.deliver").hide();
+			$(".pizzatable").hide();
+			$("#pizzatotal").hide();
+			$("#addedprice").hide();
+			$(".choice h2").hide();
+			$(".pickitup").slideDown(1000);
+		});
+
+		$("button#final-pick").click(function (event) {event.preventDefault();
+			$(".pickitup").hide();
+			$("button#final-pick").hide();
+			let personpick = $("input#pickname").val();
+
+			if ($("input#pickname").val() != ""){
+				$("#pickup").append("Your bill is sh. " + checkoutTotal + " .Come with this amount to our shop to pick up your order. Call 0732998119 to confirm if your order is ready. Thank you " + personpick + " for shopping at Yummy Scrummy Pizza!");
+			  $("#pickup").slideDown(1200);
+			} else {
+				$(".pickitup").show();
+			  $("button#final-pick").show();
+				document.getElementById("invalid1").innerText = "Please enter your name"
+			  document.getElementById("invalid1").style.color ="yellow"
+			}
+		});
+
 		
 		$("button#final-order").click(function (event) {
       event.preventDefault();
@@ -130,8 +158,7 @@ $(document).ready(function () {
         $("#finallmessage").append(person + ", " + phone +", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + delamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
-      }
-      else {
+      } else {
         alert("Please fill in the details for delivery!");
         $(".delivery").show();
         $("button#final-order").show();

@@ -187,6 +187,12 @@ hr.new1 {
   padding-left: 10%;
   padding-right: 10%;
 }
+.pickitup
+{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 #information
 {
   text-align: center;
