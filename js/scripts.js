@@ -131,7 +131,9 @@ $(document).ready(function () {
 
 			if ($("input#pickname").val() != ""){
 				$("#pickup").append("Your bill is sh. " + checkoutTotal + " .Come with this amount to our shop to pick up your order. Call 0732998119 to confirm if your order is ready. Thank you " + personpick + " for shopping at Yummy Scrummy Pizza!");
-			  $("#pickup").slideDown(1200);
+				$("#pickup").slideDown(1200);
+				$(".pizzatable").show();
+				$(".choice h2").show();
 			} else {
 				$(".pickitup").show();
 			  $("button#final-pick").show();
@@ -155,6 +157,8 @@ $(document).ready(function () {
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
+				$(".pizzatable").show();
+				$(".choice h2").show();
         $("#finallmessage").append(person + ", " + phone +", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + delamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
