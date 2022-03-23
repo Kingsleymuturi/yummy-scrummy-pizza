@@ -214,3 +214,8 @@ td,th
   color: white;
   font-size: 30px;
 }
+.video-background
+{
+  width: 1050px;
+  height: auto;
+}
